@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_app_route">
+    <sys_ux_app_route action="INSERT_OR_UPDATE">
+        <app_config display_value="Grocery App Config">b08906050e919210cd5b3a2f66c41995</app_config>
+        <description/>
+        <extension_point/>
+        <fields/>
+        <icon/>
+        <name>Settings Page</name>
+        <optional_parameters/>
+        <order>0</order>
+        <parent_macroponent display_value="Portal App Shell">b66bf1075b31101016fd7c1bf481c7a7</parent_macroponent>
+        <parent_macroponent_composition_element_id/>
+        <route_type>settings</route_type>
+        <screen_type display_value="Settings Page">898906050c9192107ab86f1a73c0aebb</screen_type>
+        <sys_class_name>sys_ux_app_route</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-15 16:32:05</sys_created_on>
+        <sys_id>4d890605df919210c3b6b89057b8e6bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Settings Page</sys_name>
+        <sys_package display_value="Grocery" source="x_1415269_grocery">ad690205979192106bdfb6fce053af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery">ad690205979192106bdfb6fce053af6a</sys_scope>
+        <sys_update_name>sys_ux_app_route_4d890605df919210c3b6b89057b8e6bb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-15 16:32:05</sys_updated_on>
+    </sys_ux_app_route>
+    <sys_translated_text action="delete_multiple" query="documentkey=4d890605df919210c3b6b89057b8e6bb"/>
+</record_update>

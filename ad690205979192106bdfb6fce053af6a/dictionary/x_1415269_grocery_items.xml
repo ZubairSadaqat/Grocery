@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="62add289971592106bdfb6fce053afec" label="items" max_length="40" name="x_1415269_grocery_items" type="collection">
+        <element default="true" function_definition="true" label="Active" max_length="255" name="active" type="boolean"/>
+        <element default="true" function_definition="true" label="Favorite" max_length="255" name="favorite" type="boolean"/>
+        <element default="https://media.istockphoto.com/id/1354776457/vector/default-image-icon-vector-missing-picture-page-for-website-design-or-mobile-app-no-photo.jpg?s=612x612&amp;w=0&amp;k=20&amp;c=w3OW0wX3LyiFRuDHo9A32Q0IUMtD4yjXEvQlqyYk9O4=" label="Image url" max_length="1024" name="image_url" type="url"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+    </element>
+</database>

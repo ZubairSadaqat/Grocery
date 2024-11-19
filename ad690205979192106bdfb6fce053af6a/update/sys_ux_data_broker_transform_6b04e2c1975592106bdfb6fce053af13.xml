@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_data_broker_transform">
+    <sys_ux_data_broker_transform action="INSERT_OR_UPDATE">
+        <acl_failure_result/>
+        <api_name>x_1415269_grocery.Get grocery favorites</api_name>
+        <batch_exclude>false</batch_exclude>
+        <description>This is a data resource script for getting populated Fav items into my Grocery App</description>
+        <mutates_server_data>false</mutates_server_data>
+        <name>Get grocery favorites</name>
+        <output_schema/>
+        <private>false</private>
+        <props/>
+        <required_translations>[ ]</required_translations>
+        <schema_version>1.0.0</schema_version>
+        <script><![CDATA[function transform(input) {
+    //replace the following three values with the table names from your instance
+    var listTable = "x_1415269_grocery_list";
+    var itemTable = "x_1415269_grocery_items";
+    var listItemTable = "x_1415269_grocery_list_item";
+
+    var listID = "";
+    var au = new global.ArrayUtil();
+    var listItemArray = [];
+    var groceryItemData = {};
+
+    try {
+        //Get the Active list with earliest shopping date
+        var list = new GlideRecord(listTable);
+        list.addQuery("active", true);
+        list.orderBy("shop_date");
+        list.query();
+        if (list.next()) {
+            listID = list.getUniqueValue();
+
+            groceryItemData.listID = listID;
+            groceryItemData.items = [];
+			gs.info(JSON.stringify(groceryItemData));
+
+            //get the Items that are already on the list.
+            var listItem = new GlideRecord(listItemTable);
+            listItem.addQuery("list", listID);
+            listItem.query();
+            while (listItem.next()) {
+                listItemArray.push(listItem.item.sys_id + "");
+            }
+
+            //query All available items to compare to listItemArray
+            var item = new GlideRecord(itemTable);
+            item.addQuery("active", true);
+            item.orderBy("name");
+            item.query();
+            while (item.next()) {
+                var itemID = item.getUniqueValue();
+
+                //check if Item is already on the list
+                var onList = au.contains(listItemArray, itemID);
+				var imageURL = item.getValue("image_url");
+
+                var itemObj = {
+                    "name": item.getValue("name"),
+                    "id": itemID,
+                    "added": onList,
+					"image": imageURL
+                };
+
+                groceryItemData.items.push(itemObj);
+            }
+            gs.info(JSON.stringify(groceryItemData));
+
+            return groceryItemData;
+        }
+    } catch (error) {
+        return error;
+    }
+}]]></script>
+        <sys_class_name>sys_ux_data_broker_transform</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-15 18:38:09</sys_created_on>
+        <sys_id>6b04e2c1975592106bdfb6fce053af13</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Get grocery favorites</sys_name>
+        <sys_package display_value="Grocery" source="x_1415269_grocery">ad690205979192106bdfb6fce053af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery">ad690205979192106bdfb6fce053af6a</sys_scope>
+        <sys_update_name>sys_ux_data_broker_transform_6b04e2c1975592106bdfb6fce053af13</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-21 12:23:58</sys_updated_on>
+    </sys_ux_data_broker_transform>
+    <sys_translated_text action="delete_multiple" query="documentkey=6b04e2c1975592106bdfb6fce053af13"/>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6b04e2c1975592106bdfb6fce053af13</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-15 18:38:08</sys_created_on>
+        <sys_id>bf56a2c1975592106bdfb6fce053af9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-15 18:38:08</sys_updated_on>
+        <table>sys_ux_data_broker_transform</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

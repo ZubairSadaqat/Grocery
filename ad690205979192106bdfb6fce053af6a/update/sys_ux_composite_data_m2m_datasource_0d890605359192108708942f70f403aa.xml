@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_m2m_datasource">
+    <sys_ux_composite_data_m2m_datasource action="INSERT_OR_UPDATE">
+        <dataset display_value="Custom Portal Landing - My Tasks Dataset">898906050d919210dc83c887c5edd1ac</dataset>
+        <datasource display_value="Custom Portal Landing - My Tasks Datasource (Task table)">45890605319192109703f2f23deb94ab</datasource>
+        <sys_class_name>sys_ux_composite_data_m2m_datasource</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-15 16:32:08</sys_created_on>
+        <sys_id>0d890605359192108708942f70f403aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Grocery" source="x_1415269_grocery">ad690205979192106bdfb6fce053af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery">ad690205979192106bdfb6fce053af6a</sys_scope>
+        <sys_update_name>sys_ux_composite_data_m2m_datasource_0d890605359192108708942f70f403aa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-15 16:32:08</sys_updated_on>
+    </sys_ux_composite_data_m2m_datasource>
+</record_update>

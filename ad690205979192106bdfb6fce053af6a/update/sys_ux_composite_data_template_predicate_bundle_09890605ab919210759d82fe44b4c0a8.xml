@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_composite_data_template_predicate_bundle">
+    <sys_ux_composite_data_template_predicate_bundle action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <name>My requests - incident bundle</name>
+        <sys_class_name>sys_ux_composite_data_template_predicate_bundle</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-15 16:32:09</sys_created_on>
+        <sys_id>09890605ab919210759d82fe44b4c0a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My requests - incident bundle</sys_name>
+        <sys_package display_value="Grocery" source="x_1415269_grocery">ad690205979192106bdfb6fce053af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery">ad690205979192106bdfb6fce053af6a</sys_scope>
+        <sys_update_name>sys_ux_composite_data_template_predicate_bundle_09890605ab919210759d82fe44b4c0a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-15 16:32:09</sys_updated_on>
+    </sys_ux_composite_data_template_predicate_bundle>
+</record_update>

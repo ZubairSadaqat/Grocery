@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e5dd1a89971592106bdfb6fce053af9c" label="List" max_length="40" name="x_1415269_grocery_list" type="collection">
+        <element label="Shop date" max_length="255" name="shop_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Store" max_length="40" name="store" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Imtiaz Mall" sequence="1" value="Imtiaz Mall"/>
+                <element inactive_on_update="false" label="Packages Mall" sequence="2" value="Packages Mall"/>
+                <element inactive_on_update="false" label="Alftah" sequence="0" value="Alftah"/>
+            </choice>
+        </element>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="In Person" sequence="0" value="In Person"/>
+                <element inactive_on_update="false" label="Online" sequence="1" value="Online"/>
+            </choice>
+        </element>
+        <element default="true" function_definition="true" label="Active" max_length="255" name="active" type="boolean"/>
+        <element choice="1" default="open" function_definition="open" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="Cancelled"/>
+                <element inactive_on_update="false" label="Open" sequence="0" value="Open"/>
+                <element inactive_on_update="false" label="In Progress" sequence="1" value="In Progress"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="Completed"/>
+            </choice>
+        </element>
+    </element>
+</database>

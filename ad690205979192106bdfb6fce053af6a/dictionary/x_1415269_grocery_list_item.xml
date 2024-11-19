@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="3afd1e89971592106bdfb6fce053afd0" label="List Item" max_length="40" name="x_1415269_grocery_list_item" type="collection">
+        <element label="List" mandatory="true" max_length="32" name="list" reference="x_1415269_grocery_list" reference_qual="active=true" reference_qual_condition="active=true" type="reference"/>
+        <element label="Item" mandatory="true" max_length="32" name="item" reference="x_1415269_grocery_items" reference_qual="active=true" reference_qual_condition="active=true" type="reference"/>
+        <index name="index">
+            <element name="item"/>
+        </index>
+        <index name="index2">
+            <element name="list"/>
+        </index>
+    </element>
+</database>

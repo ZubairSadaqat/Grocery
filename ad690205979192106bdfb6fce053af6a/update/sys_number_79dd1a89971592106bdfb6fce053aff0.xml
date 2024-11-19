@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_1415269_grocery_list">x_1415269_grocery_list</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>LIS</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2024-10-15 18:00:51</sys_created_on>
+        <sys_id>79dd1a89971592106bdfb6fce053aff0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LIS</sys_name>
+        <sys_package display_value="Grocery" source="x_1415269_grocery">ad690205979192106bdfb6fce053af6a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Grocery">ad690205979192106bdfb6fce053af6a</sys_scope>
+        <sys_update_name>sys_number_79dd1a89971592106bdfb6fce053aff0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2024-10-15 18:00:51</sys_updated_on>
+    </sys_number>
+</record_update>
